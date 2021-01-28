@@ -4,6 +4,7 @@
 
 You should have the following installed:
 
+- [Docker](https://docs.docker.com/get-docker/)
 - [Minikube](https://minikube.sigs.k8s.io/docs/start/)
 - [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
@@ -12,7 +13,7 @@ The container image used in this example is from my docker hub repo. You can bui
 ## Instruction
 
 Run the following commands in the terminal.
-Make sure you are inside the project directory.
+Make sure you are inside the project directory and docker is running in background.
 
 1. `minikube start --driver=docker` to start the cluster
 2. `kubectl apply -f kube` to create pods and service according to the template inside **kube** directory
