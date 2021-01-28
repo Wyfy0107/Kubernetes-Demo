@@ -14,7 +14,7 @@ The container image used in this example is from my docker hub repo. You can bui
 Run the following commands in the terminal.
 Make sure you are inside the project directory.
 
-1. `minikube start` to start the cluster
+1. `minikube start --driver=docker` to start the cluster
 2. `kubectl apply -f kube` to create pods and service according to the template inside **kube** directory
 3. `kubectl get pods --watch` to check that your pods are running
 4. `kubectl port-forward service/hello-world 3000:80` to forward port 3000 on host to port 80 of the load balancer service
